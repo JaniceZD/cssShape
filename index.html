@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>CSS Shape</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <div class="article-and-sidebar">
     <div class="content">
@@ -41,7 +43,7 @@
       <div class="shape">
         <h3>Circle</h3>
         <div id="circle"></div>
-        <style  contenteditable="true">
+        <style contenteditable="true">
           #circle {
             width: 100px;
             height: 100px;
@@ -62,7 +64,21 @@
           }
         </style>
       </div>
-    </div>      
+      <div class="shape">
+        <h3>Triangle Up</h3>
+        <div id="triangle-up"></div>
+        <style contenteditable="true">
+          #triangle-up {
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+          }
+        </style>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
