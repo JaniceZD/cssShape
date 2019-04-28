@@ -249,6 +249,31 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Diamond Square</h3>
+        <div id="diamond"></div>
+        <style contenteditable="true">
+          #diamond {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: red;
+            position: relative;
+            top: -50px;
+          }
+
+          #diamond::after {
+            position: absolute;
+            top: 50px;
+            left: -50px;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top-color: red;
+          }
+        </style>
+      </div>
     </div>
   </div>
 </body>
