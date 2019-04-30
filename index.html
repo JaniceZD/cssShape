@@ -299,6 +299,31 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Diamond Narrow</h3>
+        <div id="diamond-narrow"></div>
+        <style contenteditable="true">
+          #diamond-narrow {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom: 70px solid red;
+            position: relative;
+            top: -58px;
+          }
+
+          #diamond-narrow::after {
+            position: absolute;
+            content: '';
+            top: 70px;
+            left: -50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid red;
+          }
+        </style>
+      </div>
     </div>
   </div>
 </body>
