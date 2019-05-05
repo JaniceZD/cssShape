@@ -324,6 +324,33 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Cut Diamond</h3>
+        <div id="cut-diamond"></div>
+        <style contenteditable="true">
+          #cut-diamond {
+            border-style: solid;
+            border-color: transparent transparent red transparent;
+            border-width: 0 25px 25px 25px;
+            width: 50px;
+            height: 0;
+            position: relative;
+            box-sizing: content-box;
+            margin: 0 0 80px 0;
+          }
+
+          #cut-diamond::after {
+            position: absolute;
+            content: '';
+            top: 25px;
+            left: -25px;
+            width: 50px;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid red;
+          }
+        </style>
+      </div>
     </div>
   </div>
 </body>
