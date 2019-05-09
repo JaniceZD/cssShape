@@ -378,6 +378,43 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Hexagon</h3>
+        <div id="hexagon"></div>
+        <style contenteditable="true">
+          #hexagon {
+            width: 100px;
+            height: 55px;
+            background: red;
+            position: relative;
+            margin: 40px 0;
+          }
+
+          #hexagon::before {
+            position: absolute;
+            content: '';
+            top: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 25px solid red;
+          }
+
+          #hexagon::after {
+            position: absolute;
+            content: '';
+            bottom: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 25px solid red;
+          }
+        </style>
+      </div>
     </div>
   </div>
 </body>
