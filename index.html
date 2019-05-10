@@ -415,6 +415,40 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Octagon</h3>
+        <div id="octagon"></div>
+        <style contenteditable="true">
+          #octagon {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+          }
+          #octagon::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 0;
+            border-left: 29px solid #eee;
+            border-right: 29px solid #eee;
+            border-bottom: 29px solid red;
+          }
+          #octagon::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 0;
+            border-left: 29px solid #eee;
+            border-right: 29px solid #eee;
+            border-top: 29px solid red;
+          }
+        </style>
+      </div>
     </div>
   </div>
 </body>
