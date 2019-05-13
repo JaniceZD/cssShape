@@ -425,6 +425,7 @@
             background: red;
             position: relative;
           }
+
           #octagon::before {
             position: absolute;
             content: '';
@@ -436,6 +437,7 @@
             border-right: 29px solid #eee;
             border-bottom: 29px solid red;
           }
+
           #octagon::after {
             position: absolute;
             content: '';
@@ -446,6 +448,33 @@
             border-left: 29px solid #eee;
             border-right: 29px solid #eee;
             border-top: 29px solid red;
+          }
+        </style>
+      </div>
+      <div class="shape">
+        <h3>Curved Tail Arrow</h3>
+        <div id="curvedarrow"></div>
+        <style contenteditable="true">
+          #curvedarrow {
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 9px solid transparent;
+            border-right: 9px solid red;
+            margin: 0 20px;
+          }
+
+          #curvedarrow::after {
+            position: absolute;
+            content: '';
+            top: -12px;
+            left: -9px;
+            width: 12px;
+            height: 12px;
+            border: 0px solid transparent;
+            border-top: 3px solid red;
+            border-radius: 20px 0 0 0;
+            transform: rotate(45deg);
           }
         </style>
       </div>
