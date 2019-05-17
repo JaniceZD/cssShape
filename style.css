@@ -96,7 +96,7 @@ p {
   padding: 0 16px;
 }
 .topNavBar nav {
-  padding-top: 6px;
+  padding-top: 2px;
 }
 .topNavBar nav > ul {
   list-style: none; 
@@ -105,8 +105,8 @@ p {
 }
 .topNavBar nav > ul >li {
   float: left;
-  margin-left: 27px;
-  margin-right: 27px;
+  margin-left: 35px;
+  margin-right: 35px;
   position: relative;
 }
 .topNavBar nav > ul > li > a {
@@ -115,7 +115,7 @@ p {
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
   color: inherit;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-bottom: 5px;
   position: relative;
 }
@@ -145,6 +145,7 @@ p {
   margin-left: 30px;
 }
 .topNavBar .logo .star { margin-right: 0;}
+.topNavBar .logo .star svg { vertical-align: baseline; }
 .topNavBar .logo .text {
   margin-left: -2px;
   color: #9A9DA2;
