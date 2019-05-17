@@ -7,9 +7,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Shape</title>
   <link rel="stylesheet" href="./style.css">
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="topNavBar" id="topNavBar">
+    <div class="topNavBar-inner clearfix" id="topNavBar">
+      <a href="#" class="logo" id="logo" style="float: left;">
+        <span class="star">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-xinghao2"></use>
+          </svg>
+        </span>
+        <span class="text">CSS-SHAPE</span>
+      </a>
+      <nav class="menu" style="float: right;">
+        <ul class="clearfix">
+          <li><a href="#">三角形</a></li>
+          <li><a href="#">圆形</a></li>
+          <li><a href="#">方形</a></li>
+          <li><a href="#">多边形</a></li>
+          <li><a href="#">特殊图形</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   <div class="article-and-sidebar">
     <div class="content">
       <p>
@@ -533,6 +563,7 @@
             border-radius: 50px 50px 0 50px;
             transform: rotate(-45deg);
           }
+
           #infinity::after {
             left: auto;
             right: 0;
@@ -545,17 +576,17 @@
         <h3>Egg</h3>
         <div id="egg"></div>
         <style contenteditable="true">
-         #egg {
-           display: block;
-           width: 126px;
-           height: 180px;
-           background: red;
-           border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-         }
+          #egg {
+            display: block;
+            width: 126px;
+            height: 180px;
+            background: red;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+          }
         </style>
       </div>
     </div>
   </div>
 </body>
-
+<script src="//at.alicdn.com/t/font_1195027_dk92flqco1.js"></script>
 </html>
