@@ -84,9 +84,10 @@ p {
   width: 100%;
   transition: all 0.5s;
   color: #2e2f3e;
+  background-image: linear-gradient( to bottom, #eaeaea, #fff );
 }
 .topNavBar.sticky{
-  background: white;
+  background: #fafafa;
   padding: 10px 0; 
   z-index: 1;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
