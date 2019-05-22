@@ -598,17 +598,42 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Talk Bubble</h3>
+        <div id="talkbubble"></div>
+        <style contenteditable="true">
+          #talkbubble {
+            width: 120px;
+            height: 80px;
+            background: red;
+            border-radius: 10px;
+            position: relative;
+          }
+
+          #talkbubble::before {
+            position: absolute;
+            content: '';
+            top: 26px;
+            right: 100%;
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-right: 17px solid red;
+            border-bottom: 13px solid transparent;
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     window.onscroll = function (x) {
-			if (window.scrollY > 0) {
+      if (window.scrollY > 0) {
         $('.topNavBar').addClass('sticky')
-			} else {
+      } else {
         $('.topNavBar').removeClass('sticky')
-			}
-		}
+      }
+    }
   </script>
   <script src="//at.alicdn.com/t/font_1195027_dk92flqco1.js"></script>
 </body>
