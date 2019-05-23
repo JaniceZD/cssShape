@@ -623,6 +623,33 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Star(6-points)</h3>
+        <div id="star-six"></div>
+        <style contenteditable="true">
+          #star-six {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            position: relative;
+            margin-bottom: 35px;
+          }
+
+          #star-six::after {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid red;
+            position: absolute;
+            content: '';
+            top: 30px;
+            left: -50px;
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
