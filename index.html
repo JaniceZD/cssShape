@@ -650,6 +650,48 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Star(5-points)</h3>
+        <div id="star-five"></div>
+        <style contenteditable="true">
+          #star-five {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            position: relative;
+            transform: rotate(35deg);
+            margin: 50px 0;
+          }
+
+          #star-five::before {
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 80px solid red;
+            position: absolute;
+            content: '';
+            top: -45px;
+            left: -65px;
+            transform: rotate(-35deg);
+          }
+
+          #star-five::after {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: -105px;
+            transform: rotate(-70deg);
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
