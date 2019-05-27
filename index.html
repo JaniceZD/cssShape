@@ -662,7 +662,7 @@
             border-bottom: 70px solid red;
             position: relative;
             transform: rotate(35deg);
-            margin: 50px 0;
+            margin: 65px 0;
           }
 
           #star-five::before {
@@ -689,6 +689,34 @@
             top: 3px;
             left: -105px;
             transform: rotate(-70deg);
+          }
+        </style>
+      </div>
+      <div class="shape">
+        <h3>12 Point Burst</h3>
+        <div id="burst-12"></div>
+        <style contenteditable="true">
+          #burst-12 {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: relative;
+          }
+          #burst-12::before,
+          #burst-12::after {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+          }
+          #burst-12::before {
+            transform: rotate(30deg);
+          }
+          #burst-12::after {
+            transform: rotate(60deg);
           }
         </style>
       </div>
