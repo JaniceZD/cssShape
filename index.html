@@ -788,6 +788,37 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Badge Ribbon</h3>
+        <div id="badge-ribbon"></div>
+        <style contenteditable="true">
+          #badge-ribbon {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50px;
+            position: relative;
+          }
+
+          #badge-ribbon::before,
+          #badge-ribbon::after {
+            position: absolute;
+            content: '';
+            top: 70px;
+            left: -10px;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid red;
+            transform: rotate(-140deg);
+          }
+
+          #badge-ribbon::after {
+            left: auto;
+            right: -10px;
+            transform: rotate(140deg);
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
