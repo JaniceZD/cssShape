@@ -820,6 +820,29 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>TV Screen</h3>
+        <div id="tv"></div>
+        <style contenteditable="true">
+          #tv {
+            width: 200px;
+            height: 150px;
+            background: red;
+            position: relative;
+            border-radius: 50% / 11%;
+          }
+          #tv::before {
+            position: absolute;
+            content: '';
+            top: 10%;
+            bottom: 10%;
+            left: -5%;
+            right: -5%;
+            background: inherit;
+            border-radius: 5% / 50%;
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
