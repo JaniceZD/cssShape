@@ -831,6 +831,7 @@
             position: relative;
             border-radius: 50% / 11%;
           }
+
           #tv::before {
             position: absolute;
             content: '';
@@ -840,6 +841,42 @@
             right: -5%;
             background: inherit;
             border-radius: 5% / 50%;
+          }
+        </style>
+      </div>
+      <div class="shape">
+        <h3>Chevron</h3>
+        <div id="chevron"></div>
+        <style contenteditable="true">
+          #chevron {
+            position: relative;
+            width: 200px;
+            height: 60px;
+            padding: 12px;
+            margin-bottom: 6px;
+            box-sizing: border-box;
+          }
+
+          #chevron::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            background: red;
+            height: 100%;
+            width: 51%;
+            transform: skew(0, 6deg);
+          }
+
+          #chevron::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            background: red;
+            height: 100%;
+            width: 50%;
+            transform: skew(0, -6deg);
           }
         </style>
       </div>
