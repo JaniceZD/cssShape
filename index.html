@@ -880,6 +880,32 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Magnifying Glass</h3>
+        <div id="magnifying-glass"></div>
+        <style contenteditable="true">
+          #magnifying-glass {
+            width: 0.4em;
+            height: 0.4em;
+            position: relative;
+            font-size: 10em;
+            border: 0.1em solid red;
+            border-radius: 0.35em;
+            box-sizing: content-box;
+            margin-bottom: 30px;
+          }
+          #magnifying-glass::before {
+            position: absolute;
+            content: '';
+            right: -0.25em;
+            bottom: -0.1em;
+            width: 0.35em;
+            height: 0.08em;
+            background: red;
+            transform: rotate(45deg);
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
