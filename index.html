@@ -1002,6 +1002,28 @@
           }
         </style>
       </div>
+      <div class="shape">
+        <h3>Cross</h3>
+        <div id="cross"></div>
+        <style contenteditable="true">
+          #cross {
+            width: 20px;
+            height: 100px;
+            background: red;
+            position: relative;
+            margin: 0 40px;
+          }
+          #cross::after {
+            position: absolute;
+            content: '';
+            top: 40px;
+            left: -40px;
+            width: 100px;
+            height: 20px;
+            background: red;
+          }
+        </style>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
