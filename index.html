@@ -1013,6 +1013,7 @@
             position: relative;
             margin: 0 40px;
           }
+
           #cross::after {
             position: absolute;
             content: '';
@@ -1021,6 +1022,31 @@
             width: 100px;
             height: 20px;
             background: red;
+          }
+        </style>
+      </div>
+      <div class="shape">
+        <h3>Base</h3>
+        <div id="base"></div>
+        <style contenteditable="true">
+          #base {
+            width: 100px;
+            height: 55px;
+            background: red;
+            position: relative;
+            margin-top: 55px;
+          }
+
+          #base::before {
+            position: absolute;
+            content: '';
+            top: -35px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 35px solid red;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
           }
         </style>
       </div>
